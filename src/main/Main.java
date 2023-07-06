@@ -51,7 +51,13 @@ public final class Main {
                 action(file.getAbsolutePath(), filepath);
             }
         }
-
+//        String filePath11 = "D:\\Claudiu\\Java\\Streaming-Platform-Project-Object-Oriented-Programming\\test_db\\test_files\\favorite_fail_duplicate.json";
+//        String filepath = "result/out_favorite_fail_duplicate.json";
+//        File out = new File(filepath);
+//        boolean isCreated = out.createNewFile();
+//        if (isCreated) {
+//            action(filePath11, filepath);
+//        }
         checker.iterateFiles(Constants.RESULT_PATH, Constants.REF_PATH, Constants.TESTS_PATH);
         Checkstyle test = new Checkstyle();
         test.testCheckstyle();
@@ -71,8 +77,8 @@ public final class Main {
         JSONArray arrayResult = new JSONArray();
 
         //TODO add here the entry point to your implementation
+        Solution.solution(input, arrayResult);
 
-        // Test first try
 
 
         fileWriter.closeJSON(arrayResult);

@@ -19,6 +19,8 @@ public final class Constants {
     public static final String FILMOGRAPHY = "filmography";
     public static final String SUBSCRIPTION = "subscription";
     public static final String FAVORITE_MOVIES = "favourite";
+
+    public static final String FAVORITE = "favorite";
     public static final String GENRES = "genres";
     public static final String SEASONS = "seasons";
     public static final String CURRENT_SEASON = "current_season";
