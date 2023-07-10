@@ -17,6 +17,9 @@ public class Command implements Action {
             case Constants.FAVORITE -> {
                 return Favorite.executeAction(input, actionInputData);
             }
+            case Constants.NUMBER_VIEWS -> {
+
+            }
         }
         return new JSONObject();
     }
