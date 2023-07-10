@@ -10,11 +10,16 @@ Starting audit...
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Favorite.java:12:57: Parameter actionInputData should be final. [FinalParameters]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Favorite.java:24: Line is longer than 100 characters (found 116). [LineLength]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Favorite.java:43: Line is longer than 100 characters (found 126). [LineLength]
-[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:3:8: Unused import - fileio.ActionInputData. [UnusedImports]
-[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:4:8: Unused import - fileio.Input. [UnusedImports]
-[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:5:8: Unused import - org.json.simple.JSONObject. [UnusedImports]
-[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:7:8: Unused import - java.util.HashMap. [UnusedImports]
-[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:8:8: Unused import - java.util.Map. [UnusedImports]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:10:34: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:11:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:11:44: Parameter input should be final. [FinalParameters]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:11:57: Parameter actionInputData should be final. [FinalParameters]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:13:9: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:13:51: ')' is preceded with whitespace. [ParenPad]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:14:13: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:15:17: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:19: Line is longer than 100 characters (found 150). [LineLength]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:29: Line is longer than 100 characters (found 116). [LineLength]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Query\Query.java:1: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Query\Query.java:7:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Query\Query.java:7:5: Redundant 'public' modifier. [RedundantModifier]
@@ -28,4 +33,4 @@ Starting audit...
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\main\Solution.java:16:57: Inner assignments should be avoided. [InnerAssignment]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\main\Solution.java:17:42: Inner assignments should be avoided. [InnerAssignment]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 33 errors.
