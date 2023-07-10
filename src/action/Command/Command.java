@@ -20,6 +20,9 @@ public class Command implements Action {
             case Constants.VIEW -> {
                 return View.executeAction(input, actionInputData);
             }
+            case Constants.RATING -> {
+                return Rating.executeAction(input, actionInputData);
+            }
         }
         return new JSONObject();
     }

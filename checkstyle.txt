@@ -10,6 +10,15 @@ Starting audit...
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Favorite.java:12:57: Parameter actionInputData should be final. [FinalParameters]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Favorite.java:24: Line is longer than 100 characters (found 116). [LineLength]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Favorite.java:43: Line is longer than 100 characters (found 126). [LineLength]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Favorite.java:67: Line is longer than 100 characters (found 106). [LineLength]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:8:8: Unused import - java.util.Map. [UnusedImports]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:11:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:11:44: Parameter input should be final. [FinalParameters]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:11:57: Parameter actionInputData should be final. [FinalParameters]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:12:9: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:13:13: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:14:17: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\Rating.java:17: Line is longer than 100 characters (found 170). [LineLength]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:10:34: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:11:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\action\Command\View.java:11:44: Parameter input should be final. [FinalParameters]
@@ -33,4 +42,4 @@ Starting audit...
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\main\Solution.java:16:57: Inner assignments should be avoided. [InnerAssignment]
 [ERROR] D:\Claudiu\Java\Streaming-Platform-Project-Object-Oriented-Programming\.\src\main\Solution.java:17:42: Inner assignments should be avoided. [InnerAssignment]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 42 errors.

@@ -62,6 +62,10 @@ public class Favorite extends Command{
             return jsonObject;
         }
 
-        return null;
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("id", actionInputData.getActionId());
+        jsonObject.put("message", "success -> " + actionInputData.getTitle() + " was added as favourite");
+
+        return jsonObject;
     }
 }

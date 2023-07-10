@@ -79,4 +79,5 @@ public final class Constants {
     // add any constants you think you may use
 
     public static final String VIEW = "view";
+    public static final String RATING = "rating";
 }
