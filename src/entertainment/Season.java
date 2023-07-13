@@ -22,6 +22,19 @@ public final class Season {
      */
     private List<Double> ratings;
 
+    public double calculateRatingForSeason() {
+        double rating = 0;
+        int nr = 0;
+        for(Double grade : ratings) {
+            rating+= grade;
+            ++nr;
+        }
+        if(nr != 0) {
+            rating/= nr;
+        }
+        return rating;
+    }
+
     public Season(final int currentSeason, final int duration) {
         this.currentSeason = currentSeason;
         this.duration = duration;

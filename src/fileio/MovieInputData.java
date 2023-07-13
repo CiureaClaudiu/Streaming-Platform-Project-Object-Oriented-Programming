@@ -1,6 +1,7 @@
 package fileio;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Information about a movie, retrieved from parsing the input test files
@@ -19,9 +20,30 @@ public final class MovieInputData extends ShowInput {
         super(title, year, cast, genres);
         this.duration = duration;
     }
+    public double calculateRating() {
+        double rating = 0;
+        int nr = 0;
+        for (Double grade : ratings) {
+            rating += grade;
+            ++nr;
+        }
+        if (nr != 0) {
+            rating /= nr;
+        }
+        return rating;
+    }
+    private List<Double> ratings = new ArrayList<>();
 
     public int getDuration() {
         return duration;
+    }
+
+    public List<Double> getRatings() {
+        return ratings;
+    }
+
+    public void setRatings(List<Double> ratings) {
+        this.ratings = ratings;
     }
 
     @Override

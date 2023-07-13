@@ -28,6 +28,8 @@ public final class ActorInputData {
      */
     private Map<ActorsAwards, Integer> awards;
 
+    private double rating;
+
     public ActorInputData(final String name, final String careerDescription,
                           final ArrayList<String> filmography,
                           final Map<ActorsAwards, Integer> awards) {
@@ -63,6 +65,49 @@ public final class ActorInputData {
 
     public void setCareerDescription(final String careerDescription) {
         this.careerDescription = careerDescription;
+    }
+
+    public void setAwards(Map<ActorsAwards, Integer> awards) {
+        this.awards = awards;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public void calculateRating(Input input) {
+        rating = 0;
+        int nr = 0;
+        for (String title : filmography) {
+            double current = calculateRatingMovieSerial(title, input);
+            if (current != 0) {
+                rating += current;
+                ++nr;
+            }
+        }
+
+        if (nr != 0) {
+            rating /= nr;
+        }
+    }
+
+    double calculateRatingMovieSerial(String title, Input input) {
+        for (MovieInputData movie : input.getMovies()) {
+            if (movie.getTitle().equals(title)) {
+                return movie.calculateRating();
+            }
+        }
+
+        for (SerialInputData serial : input.getSerials()) {
+            if (serial.getTitle().equals(title)) {
+                return serial.calculateRatingForSerials();
+            }
+        }
+        return 0;
     }
 
     @Override

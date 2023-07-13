@@ -36,6 +36,20 @@ public final class SerialInputData extends ShowInput {
         return seasons;
     }
 
+
+    public double calculateRatingForSerials() {
+        double rating = 0;
+        int nr = 0;
+        for (Season season: seasons) {
+            rating += season.calculateRatingForSeason();
+            ++nr;
+        }
+
+        if (nr != 0) {
+            rating /= nr;
+        }
+        return rating;
+    }
     @Override
     public String toString() {
         return "SerialInputData{" + " title= "

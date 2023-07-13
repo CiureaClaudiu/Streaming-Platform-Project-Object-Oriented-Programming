@@ -2,6 +2,7 @@ package main;
 
 import action.Action;
 import action.Command.Command;
+import action.Query.Query;
 import common.Constants;
 import fileio.ActionInputData;
 import fileio.Input;
@@ -14,6 +15,7 @@ public class Solution {
         for (ActionInputData action : input.getCommands()) {
             switch (action.getActionType()) {
                 case Constants.COMMAND -> actionToSolve = new Command();
+                case Constants.QUERY -> actionToSolve = new Query();
                 default -> actionToSolve = new Command();
             }
 

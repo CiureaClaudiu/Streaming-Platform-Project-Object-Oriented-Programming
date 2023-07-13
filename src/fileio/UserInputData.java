@@ -1,6 +1,8 @@
 package fileio;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -26,6 +28,10 @@ public final class UserInputData {
      */
     private final ArrayList<String> favoriteMovies;
 
+    private ArrayList<String> ratedMovies = new ArrayList<>();
+
+    private HashMap<String, List<Integer>> ratedSerials = new HashMap<>();
+
     public UserInputData(final String username, final String subscriptionType,
                          final Map<String, Integer> history,
                          final ArrayList<String> favoriteMovies) {
@@ -33,6 +39,22 @@ public final class UserInputData {
         this.subscriptionType = subscriptionType;
         this.favoriteMovies = favoriteMovies;
         this.history = history;
+    }
+
+    public HashMap<String, List<Integer>> getRatedSerials() {
+        return ratedSerials;
+    }
+
+    public void setRatedSerials(HashMap<String, List<Integer>> ratedSerials) {
+        this.ratedSerials = ratedSerials;
+    }
+
+    public ArrayList<String> getRatedMovies() {
+        return ratedMovies;
+    }
+
+    public void setRatedMovies(ArrayList<String> ratedMovies) {
+        this.ratedMovies = ratedMovies;
     }
 
     public String getUsername() {

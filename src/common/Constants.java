@@ -80,4 +80,6 @@ public final class Constants {
 
     public static final String VIEW = "view";
     public static final String RATING = "rating";
+
+    public static final String AVERAGE = "average";
 }
