@@ -67,4 +67,6 @@ public final class Input {
     public List<SerialInputData> getSerials() {
         return serialsData;
     }
+
+
 }

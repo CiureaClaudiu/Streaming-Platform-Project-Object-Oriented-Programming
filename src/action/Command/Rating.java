@@ -41,7 +41,6 @@ public class Rating extends Command {
                     }
 
                     jsonObject.put("message", "success -> " + actionInputData.getTitle() + " was rated with " + actionInputData.getGrade() + " by " + user.getUsername());
-                    // TODO Add logic later for actual rating being stored for each movie and for each serials(for each individual season)
 
                     return jsonObject;
                 }

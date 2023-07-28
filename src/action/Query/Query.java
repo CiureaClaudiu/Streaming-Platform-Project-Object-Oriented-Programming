@@ -4,6 +4,7 @@ import action.Action;
 import action.Command.Favorite;
 import action.Command.Rating;
 import action.Command.View;
+import actor.ActorsAwards;
 import common.Constants;
 import fileio.ActionInputData;
 import fileio.Input;
@@ -16,6 +17,9 @@ public class Query implements Action {
         switch (actionInputData.getCriteria()) {
             case Constants.AVERAGE -> {
                 return Average.executeAction(input, actionInputData);
+            }
+            case Constants.AWARDS -> {
+                return Awards.executeAction(input, actionInputData);
             }
         }
 

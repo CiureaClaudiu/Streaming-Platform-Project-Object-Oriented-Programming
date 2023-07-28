@@ -3,6 +3,8 @@ package fileio;
 import actor.ActorsAwards;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -26,8 +28,11 @@ public final class ActorInputData {
     /**
      * awards won by the actor
      */
-    private Map<ActorsAwards, Integer> awards;
+    public List<ActorInputData> MostAwardedActor;
+    public List<ActorInputData> actors;
 
+    private Map<ActorsAwards, Integer> awards;
+    private Integer numberOfAwards = 0;
     private double rating;
 
     public ActorInputData(final String name, final String careerDescription,
@@ -37,6 +42,7 @@ public final class ActorInputData {
         this.careerDescription = careerDescription;
         this.filmography = filmography;
         this.awards = awards;
+        this.numberOfAwards = 0;
     }
 
     public String getName() {
@@ -110,6 +116,13 @@ public final class ActorInputData {
         return 0;
     }
 
+    public void calculateNumberOfAwards() {
+        numberOfAwards = 0;
+        for(Map.Entry<ActorsAwards, Integer> award : awards.entrySet()) {
+            numberOfAwards += award.getValue();
+        }
+    }
+
     @Override
     public String toString() {
         return "ActorInputData{"
@@ -118,4 +131,8 @@ public final class ActorInputData {
                 + careerDescription + '\''
                 + ", filmography=" + filmography + '}';
     }
+
+
+
 }
+

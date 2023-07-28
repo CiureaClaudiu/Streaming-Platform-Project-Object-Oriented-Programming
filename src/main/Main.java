@@ -51,8 +51,8 @@ public final class Main {
                 action(file.getAbsolutePath(), filepath);
             }
         }
-//        String filePath11 = "D:\\Claudiu\\Java\\Streaming-Platform-Project-Object-Oriented-Programming\\test_db\\test_files\\favorite_fail_duplicate.json";
-//        String filepath = "result/out_favorite_fail_duplicate.json";
+//        String filePath11 = "D:\\Claudiu\\Java\\Streaming-Platform-Project-Object-Oriented-Programming\\test_db\\test_files\\single_query_awards_actors.json";
+//        String filepath = "result/out_single_query_awards_actors.json";
 //        File out = new File(filepath);
 //        boolean isCreated = out.createNewFile();
 //        if (isCreated) {
