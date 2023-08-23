@@ -59,8 +59,11 @@ public class Rating extends Command {
 //                }
             }
         }
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("id", + actionInputData.getActionId());
+        jsonObject.put("message", "error -> " + actionInputData.getTitle() + " is not seen");
+        return jsonObject;
 
-        return null;
     }
 
     private static void addRating(String title, Integer season, double rating, String type,  List<MovieInputData> moviesData, List<SerialInputData> serialsData) {

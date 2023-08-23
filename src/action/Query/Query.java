@@ -21,6 +21,9 @@ public class Query implements Action {
             case Constants.AWARDS -> {
                 return Awards.executeAction(input, actionInputData);
             }
+            case Constants.RATINGS -> {
+                return Ratings.executeAction(input, actionInputData);
+            }
         }
 
         return null;

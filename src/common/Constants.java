@@ -82,4 +82,5 @@ public final class Constants {
     public static final String RATING = "rating";
 
     public static final String AVERAGE = "average";
+    public static final String RATINGS = "ratings";
 }
